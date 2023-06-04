@@ -1,0 +1,124 @@
+@import 'variables';
+
+.Breaking-news {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  
+  .Breaking-news__fotoblock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 90px 0;
+    a {
+        text-decoration: none;
+      }
+  }
+
+  .Breaking-news__fotoblock-card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    
+    h5 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 39px;
+      color: #717171;
+      margin: 0 auto 0 30px;
+    }
+    
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      color: #777777;
+      margin: 0 auto 50px 30px;
+      
+      span {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    
+    .Breaking-news__image-news {
+      padding: 10px;
+      position: relative;
+      
+      img {
+        width: 100%;
+      }
+      
+      span {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 66px;
+        height: 66px;
+        background-color: #203E38;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+        color: $color-second;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    
+    &:hover {
+      h5 {
+        color: $color-primary;
+      }
+      
+      .Breaking-news__image-news span {
+        background-color: $color-primary;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1077px) {
+    .Breaking-news__fotoblock-card {
+      width: 32%;
+      
+  }
+  .Breaking-news__fotoblock {
+    justify-content: center;
+    margin: 90px 0 30px;
+}
+}
+@media screen and (max-width: 899px) {
+  .Breaking-news__fotoblock-card {
+    width: 47%;
+}.Breaking-news__fotoblock-card {
+  align-items: stretch;
+  h5{
+    margin: 0 auto;
+  }
+  p{
+    margin: 0 auto 50px;
+  }
+}.Breaking-news__fotoblock a {
+  align-items: center;
+}
+}
+@media screen and (max-width: 500px) {
+  .Breaking-news__fotoblock-card{ 
+    h5 {
+    font-size: 14px;
+  } p {
+   font-size: 11px;
+   span {
+    padding: 0 10px;
+  }
+  }}
+.Breaking-news .conteiner h2{
+padding-top: 10px;}
+.Breaking-news__fotoblock{
+  margin-bottom: 30px;
+}
+}

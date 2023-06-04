@@ -1,0 +1,117 @@
+@import 'variables';
+
+.amazing-work{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #E9EDEF;
+    padding-bottom: 70px;
+    h2{
+      margin: 0;
+    }
+    .conteiner ul{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 125px auto 65px;
+      padding: 0;
+      a{
+        text-decoration: none;
+        padding: 20px;
+        margin: 0;
+        cursor: pointer;
+        border: 1px solid #b6b3b3;
+      }
+    }
+  }
+
+ 
+  .amazing-work .conteiner ul a:hover{
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    font-weight: bold;
+  }
+  .amazing-work .conteiner ul a:focus{
+  background-color: $color-primary;
+  color: $color-second;
+  font-weight: bold;
+  }
+  #amazingImagesBtn, #blockImagesBtn{
+    width: 170px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-second;
+    font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+    margin: 70px auto 0;
+    cursor: pointer;
+  }
+  #amazingImagesBtn:hover, #blockImagesBtn:hover{
+    background-color: $color-hover;
+  }
+  .amazing-work__foto-allblock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: url(../img/section/cursor.png), auto;
+  }
+  .image-wrapper {
+    position: relative;
+    width: 285px;
+    height: 206px;
+  }
+  .image-wrapper:hover{
+    border-top: 2px solid $color-primary;
+  }
+  .image-wrapper:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/ouramazingwork/iconHover.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.8);
+  } 
+  .image-wrapper:hover::after{
+    content: "creative design";
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+    width: 100%;
+    font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: $color-primary;
+  }
+
+
+
+  @media screen and (max-width: 1077px) {
+    .amazing-work .conteiner ul {
+        margin: 90px auto 65px;
+  
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .amazing-work .conteiner ul {
+        flex-direction: column;
+        margin: 60px auto;
+        a{
+            width: 200px;
+        }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .amazing-work h2 {
+        padding-top: 30px;}
+}
