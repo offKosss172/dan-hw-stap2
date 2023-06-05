@@ -90,8 +90,8 @@ nav img{
 .header-text, .blockbutton{
     text-align: center;
 }
-.blockbutton button:first-child{
-    margin-right: 25px;
+.blockbutton button:last-child{
+    margin-left: 25px;
     margin-bottom: 240px;
 }
 .header-text h3{
@@ -118,6 +118,89 @@ font-size: 34px;
 color: #D4D4D4;
 margin-top: 0;
 }
+
+@media screen and (max-width: 899px) {
+  .header__line .conteiner {
+    flex-direction: column;
+      nav{
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0;
+          a{
+            padding: 20px 0;
+          }
+      }
+}
+header{
+  .conteiner{
+    .header-text{
+      h1{
+        font-size: 65px;
+      }
+      h3{
+        font-size: 30px;
+        margin-top: 150px;
+      }
+      p{
+        font-size: 28px;
+      }
+    }
+    .blockbutton button:last-child{
+      margin-left: 20px;
+      margin-bottom: 180px;
+  }
+  }
+}
+}
+@media screen and (max-width: 700px){
+  header{
+    .conteiner{
+      .header-text{
+        padding: 0 20px;
+          h1{
+            font-size: 50px;
+          }
+          h3{
+            font-size: 26px;
+            margin-top: 100px;
+          }
+          p{
+            font-size: 24px;
+          }
+      }
+      
+    }
+  }
+}
+@media screen and (max-width: 500px){
+  header{
+    .conteiner{
+      .header-text{
+        padding: 0 20px;
+          h3{
+            display: none;
+          }
+          h1{
+            padding: 60px 0 20px;
+          }
+      }
+      .blockbutton{
+        display: flex;
+        row-gap: 40px;
+        flex-direction: column;
+        align-items: center;
+        padding:40px 0 60px;
+          button:last-child{
+          margin: 0;
+         }
+      }
+    }
+  }
+}
+
+
 .blockbutton button, .everything-ready .conteiner button{
 width: 170px;
 height: 70px;
@@ -288,7 +371,7 @@ transition: all 0.5s ease;
         text-decoration: none;
         font-weight: 400;
         font-size: 16px;
-        padding: 28px 40px;
+        padding: 28px 30px;
         background: #F8FCFE;
         cursor: url(../img/section/cursor.png), auto;
         transition: all 0.7s ease;
@@ -342,7 +425,7 @@ transition: all 0.5s ease;
     }
   }
 
-@media screen and (max-width: 1077px) {
+@media screen and (max-width: 1088px) {
 .our-services .our-services__contant {
   padding-top: 10px;
   display: flex;
