@@ -49,17 +49,7 @@ servicesSeo.addEventListener('click', () => {
 
 
 
-const btnGallery = document.getElementById('blockImagesBtn');
-const galleryFoto = document.querySelectorAll('.gallery__block-secret');
 
-btnGallery.addEventListener('click', () => {
- 
-  btnGallery.style.display = 'none';
-  galleryFoto.forEach(element => {
-    element.style.display = 'block';
-  });;
-
-});
 
 
 

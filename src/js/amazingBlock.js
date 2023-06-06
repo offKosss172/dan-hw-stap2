@@ -83,11 +83,19 @@ wpLink.addEventListener('click', () => {
 
 
 
-// Получаем ссылку на кнопку "Load More"
+// клик по кнопке
 var loadMoreBtn = document.getElementById("amazingImagesBtn");
 
-// Добавляем обработчик события клика на кнопку "Load More"
+
 loadMoreBtn.addEventListener("click", function() {
+  const plusImg = loadMoreBtn.querySelector('img');
+  const loadMoreText = loadMoreBtn.querySelector('p');
+  const contentButton = loadMoreBtn.querySelector('.content-button');
+    plusImg.style.display = 'none';
+    loadMoreText.style.display = 'none';
+    contentButton.style.display = 'block';
+
+    setTimeout(() => {
   // Создаем 12 новых блоков с изображениями
   var fotoAllblock = document.querySelector(".amazing-work__foto-allblock");
   for (var i = 1; i <= 12; i++) {
@@ -112,8 +120,9 @@ loadMoreBtn.addEventListener("click", function() {
     fotoAllblock.insertBefore(imageWrapper, fotoAllblock.children[12]);
   }
   
-  // Скрываем кнопку "Load More"
   loadMoreBtn.style.display = "none";
+
+  }, 2500);
 });
 
 

@@ -113,11 +113,22 @@
            
 
         </div>
-        <span id="amazingImagesBtn"><img src="/src/img/ouramazingwork/plus1.svg" alt="plus"><p>Load More</p></span>
+        <span id="amazingImagesBtn">
+            <img src="/src/img/ouramazingwork/plus1.svg" alt="plus">
+            <div class="content-button">
+                <div class="loading">
+                    <div class="spinner">
+                    <div class="bubble-1"></div>
+                    <div class="bubble-2"></div>
+                    </div>
+                </div>
+            </div>
+            <p>Load More</p>
+        </span>
 
     </div>
 </section>
-<section class="Breaking-news">
+<section class="Breaking-news" style="display: none;">
     <div class="conteiner">
         <h2>Breaking News</h2>
         <div class="Breaking-news__fotoblock">
@@ -249,7 +260,18 @@
                 <span class="gallery__block-secret"></span>
             </div>
         </div>
-        <span id="blockImagesBtn"><img src="/src/img/ouramazingwork/plus1.svg" alt="plus"><p>Load More</p></span>
+        <span id="blockImagesBtn">
+            <img src="/src/img/ouramazingwork/plus1.svg" alt="plus" id="imgPlusButton">
+            <div class="content-button">
+                <div class="loading">
+                    <div class="spinner">
+                    <div class="bubble-1"></div>
+                    <div class="bubble-2"></div>
+                    </div>
+                </div>
+            </div>
+            <p id="pPlusButton">Load More</p>
+        </span>
     </div>
 </section> 
 <footer>
@@ -257,6 +279,7 @@
     <p>© Copyright 2015 <span> theHam</span> | All Rights Reserved</p>
     </div>
 </footer>
+<a href="#" class="scrolling">UP</a>
 <script type="text/javaScript" src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
 <script type="text/javaScript" src="dist/js/scripts.min.js"></script>
 </body>
